@@ -5,7 +5,9 @@
 
 [build.environment]
   NODE_VERSION = "18"
-  PYTHON_VERSION = "3.8.12"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [build.processing]
   skip_processing = true
