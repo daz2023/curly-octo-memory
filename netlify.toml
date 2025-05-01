@@ -24,4 +24,4 @@
 [[plugins]]
   package = "@netlify/plugin-python"
   [plugins.inputs]
-    pythonVersion = "3.9" 
+    pythonVersion = "3.8.12" 
