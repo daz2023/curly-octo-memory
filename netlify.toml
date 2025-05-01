@@ -5,7 +5,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
-  PYTHON_VERSION = "3.7"
+  PYTHON_VERSION = "3.8"
 
 [build.processing]
   skip_processing = true
@@ -24,4 +24,4 @@
 [[plugins]]
   package = "@netlify/plugin-python"
   [plugins.inputs]
-    pythonVersion = "3.7" 
+    pythonVersion = "3.8" 
