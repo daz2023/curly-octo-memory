@@ -1,9 +1,11 @@
 [build]
   command = "cd frontend && npm install && npm run build"
   publish = "frontend/build"
+  functions = "netlify/functions"
 
 [build.environment]
-  NODE_VERSION = "16"
+  PYTHON_VERSION = "3.9"
+  NODE_VERSION = "18"
 
 [[redirects]]
   from = "/api/*"
@@ -14,4 +16,9 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200
+
+[[plugins]]
+  package = "@netlify/plugin-python"
+  [plugins.inputs]
+    pythonVersion = "3.9" 
